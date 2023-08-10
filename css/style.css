@@ -561,3 +561,8 @@ video {
     min-height: 100%;
     z-index: -2;
 }
+
+.brand-logo-blanco-footer {
+    content: url("../img/logo-2023-blanco-4.svg");
+    width: 350px;
+}
