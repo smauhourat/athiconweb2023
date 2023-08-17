@@ -10,8 +10,8 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -32,14 +32,14 @@
             var target = $(this.hash);
             if (target.length) {
                 e.preventDefault();
-        
+
                 if ($(this).attr("href") == '#header') {
                     scrollto = 0;
-                  }
-          
+                }
+
                 $('html, body').animate({
-                scrollTop: scrollto
-                }, 1500, 'easeInOutExpo');          
+                    scrollTop: scrollto
+                }, 1500, 'easeInOutExpo');
             }
         }
     })
@@ -49,27 +49,27 @@
     // Activate smooth scroll on page load with hash links in the url
     $(document).ready(function () {
         if (window.location.hash) {
-        var initial_nav = window.location.hash;
-        if ($(initial_nav).length) {
-            var scrollto = $(initial_nav).offset().top; // - scrolltoOffset;
-            $('html, body').animate({
-            scrollTop: scrollto
-            }, 1500, 'easeInOutExpo');
+            var initial_nav = window.location.hash;
+            if ($(initial_nav).length) {
+                var scrollto = $(initial_nav).offset().top; // - scrolltoOffset;
+                $('html, body').animate({
+                    scrollTop: scrollto
+                }, 1500, 'easeInOutExpo');
+            }
         }
-        }
-    });    
-    
+    });
+
     // // Navigation active state on scroll
     // var nav_sections = $('section');
     // var main_nav = $('.navbar-nav, .mobile-nav');
-    
+
     // (window).on('scroll', function () {
     //     var cur_pos = $(this).scrollTop() + 200;
-    
+
     //     nav_sections.each(function () {
     //       var top = $(this).offset().top,
     //         bottom = top + $(this).outerHeight();
-    
+
     //       if (cur_pos >= top && cur_pos <= bottom) {
     //         if (cur_pos <= bottom) {
     //           main_nav.find('a').removeClass('active');
@@ -89,22 +89,22 @@
     const $dropdownToggle = $(".dropdown-toggle");
     const $dropdownMenu = $(".dropdown-menu");
     const showClass = "show";
-    
-    $(window).on("load resize", function() {
+
+    $(window).on("load resize", function () {
         if (this.matchMedia("(min-width: 992px)").matches) {
             $dropdown.hover(
-            function() {
-                const $this = $(this);
-                $this.addClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "true");
-                $this.find($dropdownMenu).addClass(showClass);
-            },
-            function() {
-                const $this = $(this);
-                $this.removeClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "false");
-                $this.find($dropdownMenu).removeClass(showClass);
-            }
+                function () {
+                    const $this = $(this);
+                    $this.addClass(showClass);
+                    $this.find($dropdownToggle).attr("aria-expanded", "true");
+                    $this.find($dropdownMenu).addClass(showClass);
+                },
+                function () {
+                    const $this = $(this);
+                    $this.removeClass(showClass);
+                    $this.find($dropdownToggle).attr("aria-expanded", "false");
+                    $this.find($dropdownMenu).removeClass(showClass);
+                }
             );
         } else {
             $dropdown.off("mouseenter mouseleave");
@@ -115,10 +115,10 @@
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
-        time: 2000
+        time: 1900
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -128,7 +128,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -141,17 +141,17 @@
         loop: true,
         center: true,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:2
+            768: {
+                items: 2
             },
-            992:{
-                items:3
+            992: {
+                items: 3
             }
         }
     });
@@ -166,20 +166,20 @@
         autoplay: true,
         smartSpeed: 1000,
         responsive: {
-            0:{
-                items:2
+            0: {
+                items: 2
             },
-            576:{
-                items:4
+            576: {
+                items: 4
             },
-            768:{
-                items:6
+            768: {
+                items: 6
             },
-            992:{
-                items:8
+            992: {
+                items: 8
             }
         }
     });
-    
+
 })(jQuery);
 
