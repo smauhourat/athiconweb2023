@@ -253,6 +253,12 @@ h6,
     .carousel-caption h1 {
         font-size: 30px;
         font-weight: 600 !important;
+        /*nuevo*/
+        padding: 20px
+    }
+
+    .mobile-hide {
+        display: none;
     }
 }
 
