@@ -26,23 +26,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" type="text/css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet"
+        type="text/css">
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"
+        type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"
+        type="text/css">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="lib/animate/animate.min.css" rel="stylesheet" type="text/css">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css?v=1" rel="stylesheet">
+    <link href="css/bootstrap.min.css?v=1" rel="stylesheet" type="text/css">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css?v=1" rel="stylesheet">
+    <link href="css/style.css?v=1" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -70,13 +73,13 @@
                     <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
                             class="fab fa-twitter fw-normal"></i></a> -->
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                        href="https://www.facebook.com/profile.php?id=100077368554533" target="_blank"><i
-                            class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i
-                            class="fab fa-linkedin-in fw-normal"></i></a>
+                        href="https://www.facebook.com/profile.php?id=100077368554533" target="_blank"
+                        aria-label="facebook"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="#"
+                        aria-label="linkedin"><i class="fab fa-linkedin-in fw-normal"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                        href="https://www.instagram.com/athiconconstrucciones/" target="_blank"><i
-                            class="fab fa-instagram fw-normal"></i></a>
+                        href="https://www.instagram.com/athiconconstrucciones/" target="_blank"
+                        aria-label="instagram"><i class="fab fa-instagram fw-normal"></i></a>
                     <!-- <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i
                             class="fab fa-youtube fw-normal"></i></a> -->
                 </div>
@@ -89,11 +92,12 @@
     <!-- Navbar & Carousel Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-            <a href="index.html" class="navbar-brand p-0">
+            <a href="index.html" class="navbar-brand p-0" aria-label="logo">
                 <img class="brand-logo-blanco">
                 <!-- <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Athicon</h1> -->
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button class="navbar-toggler" type="button" id="menu-mobile" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -836,15 +840,15 @@
         <div class="container py-5 mb-5">
             <div class="bg-white">
                 <div class="owl-carousel vendor-carousel">
-                    <img src="img/vendor-1.png" alt="">
-                    <img src="img/vendor-2.png" alt="">
-                    <img src="img/vendor-3.png" alt="">
-                    <img src="img/vendor-4.png" alt="">
-                    <img src="img/vendor-5.png" alt="">
-                    <img src="img/vendor-6.png" alt="">
-                    <img src="img/vendor-7.png" alt="">
-                    <img src="img/vendor-8.png" alt="">
-                    <img src="img/vendor-9.png" alt="">
+                    <img src="img/vendor-1.png" alt="vendor-1" width="227px">
+                    <img src="img/vendor-2.png" alt="vendor-2" width="227px">
+                    <img src="img/vendor-3.png" alt="vendor-3" width="227px">
+                    <img src="img/vendor-4.png" alt="vendor-4" width="227px">
+                    <img src="img/vendor-5.png" alt="vendor-5" width="227px">
+                    <img src="img/vendor-6.png" alt="vendor-6" width="227px">
+                    <img src="img/vendor-7.png" alt="vendor-7" width="227px">
+                    <img src="img/vendor-8.png" alt="vendor-8" width="227px">
+                    <img src="img/vendor-9.png" alt="vendor-9" width="227px">
                 </div>
             </div>
         </div>
@@ -899,13 +903,13 @@
                                 <!-- <a class="btn btn-primary btn-square me-2" href="#"><i
                                         class="fab fa-twitter fw-normal"></i></a> -->
                                 <a class="btn btn-primary btn-square me-2"
-                                    href="https://www.facebook.com/profile.php?id=100077368554533" target="_blank"><i
-                                        class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="#"><i
+                                    href="https://www.facebook.com/profile.php?id=100077368554533" target="_blank"
+                                    aria-label="facebook"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#" aria-label="linkedin"><i
                                         class="fab fa-linkedin-in fw-normal"></i></a>
                                 <a class="btn btn-primary btn-square"
-                                    href="https://www.instagram.com/athiconconstrucciones/" target="_blank"><i
-                                        class="fab fa-instagram fw-normal"></i></a>
+                                    href="https://www.instagram.com/athiconconstrucciones/" target="_blank"
+                                    aria-label="instagram"><i class="fab fa-instagram fw-normal"></i></a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
