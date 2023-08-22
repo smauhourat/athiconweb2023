@@ -184,7 +184,7 @@ h6,
 
     .navbar-dark .navbar-brand .brand-logo-blanco {
         content: url("../img/logo-2023-blanco-5.svg");
-        width: 200px;
+        width: 160px;
     }
 }
 
@@ -573,4 +573,5 @@ video {
 .brand-logo-blanco-footer {
     content: url("../img/logo-2023-blanco-4.svg");
     width: 320px;
+    display: block;
 }
