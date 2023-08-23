@@ -18,7 +18,7 @@ $mail->Password = 'Catal1na/';
 
 $mail->From = 'webmaster@athicon.com'; // Email desde donde envío el correo.
 $mail->FromName = 'Contacto-Web';
-$mail->AddAddress('santiago.mauhourat@gmail.com'); // Esta es la dirección a donde enviamos los datos del formulario
+$mail->AddAddress('administracion@athicon.com'); // Esta es la dirección a donde enviamos los datos del formulario
 
 $mail->Subject = "Athicon.com - Contacto Web"; // Este es el titulo del email.
 $Body = "";
