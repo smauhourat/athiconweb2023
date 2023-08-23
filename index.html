@@ -24,12 +24,12 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+    <!-- <link
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
-        rel="stylesheet" type="text/css">
+        rel="stylesheet" type="text/css"> -->
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet"
-        type="text/css">
+        type="text/css" preload>
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"
@@ -93,11 +93,12 @@
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
             <a href="index.html" class="navbar-brand p-0" aria-label="logo">
-                <img class="brand-logo-blanco" src="img/logo-2023-blanco-5.svg" alt="logo">
+                <img class="brand-logo-blanco" src="img/logo-2023-blanco-5.svg" alt="logo" width="350" height="56">
                 <!-- <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Athicon</h1> -->
             </a>
             <button class="navbar-toggler" type="button" id="menu-mobile" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
+                aria-label="menu-mobile" data-bs-target="#navbarCollapse" name="mobile-menu"
+                data-message="Menu desplegable">
                 <span class="fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -113,7 +114,7 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <video autoplay loop muted plays-inline id="video" class="main-banner__video"
+                    <video autoplay loop muted plays-inline id="video1" class="main-banner__video"
                         poster="assets/video/video1.jpg">
                         <source src="assets/video/video1.mp4" class="w-100">
                     </video>
@@ -130,7 +131,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <video autoplay loop muted plays-inline id="video" class="main-banner__video"
+                    <video autoplay loop muted plays-inline id="video2" class="main-banner__video"
                         poster="assets/video/video2.jpg">
                         <source src="assets/video/video2.mp4" class="w-100">
                     </video>
@@ -165,12 +166,12 @@
         <div class="container py-5 pt-lg-0">
             <div class="row gx-0">
 
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                <div class="counters col-lg-4 wow zoomIn" data-wow-delay="0.1s">
                     <div class="bg-primary shadow d-flex justify-content-center p-4" style="height: 150px;">
                         <div class="mt-3">
                             <h1 class="text-white mt-0" data-counterup-beginat="0" data-toggle="counter-up"
                                 data-counterup-time="1500" data-counterup-delay="30">25</h1>
-                            <h5 class="text-white mb-0">Clientes</h5>
+                            <h2 class="text-white mb-0">Clientes</h2>
                         </div>
                         <div class="mt-4 ps-4">
                             <i class="fa fa-users text-white" style="font-size:42px"></i>
@@ -190,12 +191,12 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
+                <div class="counters col-lg-4 wow zoomIn" data-wow-delay="0.3s">
                     <div class="bg-light shadow d-flex justify-content-center p-4" style="height: 150px;">
                         <div class="mt-3">
                             <h1 class="mt-0" data-counterup-beginat="0" data-toggle="counter-up"
                                 data-counterup-time="1500" data-counterup-delay="30">580</h1>
-                            <h5 class="text-primary mb-0">Proyectos</h5>
+                            <h2 class="text-primary mb-0">Proyectos</h2>
                         </div>
                         <div class="mt-4 ps-4">
                             <i class="fa fa-project-diagram text-primary" style="font-size:42px"></i>
@@ -216,12 +217,12 @@
                         </div>
                     </div>
                 </div> -->
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+                <div class="counters col-lg-4 wow zoomIn" data-wow-delay="0.6s">
                     <div class="bg-primary shadow d-flex justify-content-center p-4" style="height: 150px;">
                         <div class="mt-3">
                             <h1 class="text-white mt-0" data-counterup-beginat="0" data-toggle="counter-up"
                                 data-counterup-time="1500" data-counterup-delay="30">1350</h1>
-                            <h5 class="text-white mb-0">Presupuestos</h5>
+                            <h2 class="text-white mb-0">Presupuestos</h2>
                         </div>
                         <div class="mt-4 ps-4">
                             <i class="fa fa-file-contract text-white" style="font-size:42px"></i>
@@ -596,33 +597,48 @@
                     <div class="col-lg-5">
                         <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn"
                             data-wow-delay="0.9s">
-                            <form>
+                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                                 <div class="row g-3">
-                                    <div class="col-xl-12">
+                                    <div class="form-group col-xl-12">
                                         <input type="text" class="form-control bg-light border-0" placeholder="Empresa"
-                                            style="height: 55px;">
+                                            name="empresa" id="empresa" data-rule="minlen:4"
+                                            data-msg="Por favor ingrese su Empresa" style="height: 55px;" />
+                                        <div class="validate"></div>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="form-group col-12">
                                         <input type="email" class="form-control bg-light border-0" placeholder="Email"
-                                            style="height: 55px;">
+                                            name="email" id="email" data-rule="email"
+                                            data-msg="Por favor ingrese un email valido" style="height: 55px;" />
+                                        <div class="validate"></div>
                                     </div>
-                                    <div class="col-12">
-                                        <input type="email" class="form-control bg-light border-0" placeholder="Motivo"
-                                            style="height: 55px;">
+                                    <div class="form-group col-12">
+                                        <input type="text" class="form-control bg-light border-0" placeholder="Motivo"
+                                            name="motivo" id="motivo" data-rule="minlen:4"
+                                            data-msg="Por favor ingrese el motivo de su consulta"
+                                            style="height: 55px;" />
+                                        <div class="validate"></div>
                                     </div>
-                                    <div class="col-12">
-                                        <textarea class="form-control bg-light border-0" rows="3"
+                                    <div class="form-group col-12">
+                                        <textarea class="form-control bg-light border-0" rows="3" name="mensaje"
+                                            id="mensaje" data-rule="required" data-msg="Por favor ingrese el mensaje"
                                             placeholder="Mensaje"></textarea>
+                                        <div class="validate"></div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-dark w-100 py-3" type="submit">Enviar Mensaje</button>
+                                        <div class="loading">Cargando</div>
+                                        <div class="error-message"></div>
+                                        <div class="sent-message">Su mensaje ha sido enviado. Gracias!</div>
                                     </div>
                                 </div>
-                            </form>
+                                <div class="col-12">
+                                    <button class="btn btn-dark w-100 py-3" type="submit">Enviar Mensaje</button>
+                                </div>
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <!-- Quote End -->
@@ -840,15 +856,15 @@
         <div class="container py-5 mb-5">
             <div class="bg-white">
                 <div class="owl-carousel vendor-carousel">
-                    <img src="img/vendor-1.png" alt="vendor-1" width="227px">
-                    <img src="img/vendor-2.png" alt="vendor-2" width="227px">
-                    <img src="img/vendor-3.png" alt="vendor-3" width="227px">
-                    <img src="img/vendor-4.png" alt="vendor-4" width="227px">
-                    <img src="img/vendor-5.png" alt="vendor-5" width="227px">
-                    <img src="img/vendor-6.png" alt="vendor-6" width="227px">
-                    <img src="img/vendor-7.png" alt="vendor-7" width="227px">
-                    <img src="img/vendor-8.png" alt="vendor-8" width="227px">
-                    <img src="img/vendor-9.png" alt="vendor-9" width="227px">
+                    <img src="img/vendor-1.png" alt="vendor-1" width="123" height="65">
+                    <img src="img/vendor-2.png" alt="vendor-2" width="123" height="65">
+                    <img src="img/vendor-3.png" alt="vendor-3" width="123" height="65">
+                    <img src="img/vendor-4.png" alt="vendor-4" width="123" height="65">
+                    <img src="img/vendor-5.png" alt="vendor-5" width="123" height="65">
+                    <img src="img/vendor-6.png" alt="vendor-6" width="123" height="65">
+                    <img src="img/vendor-7.png" alt="vendor-7" width="123" height="65">
+                    <img src="img/vendor-8.png" alt="vendor-8" width="123" height="65">
+                    <img src="img/vendor-9.png" alt="vendor-9" width="123" height="65">
                 </div>
             </div>
         </div>
@@ -865,7 +881,8 @@
                         class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
                         <a href="index.html" class="navbar-brand">
                             <!-- <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Startup</h1> -->
-                            <img class="brand-logo-blanco-footer" alt="logo-footer" src="img/logo-2023-blanco-4.svg">
+                            <img class="brand-logo-blanco-footer" alt="logo-footer" src="img/logo-2023-blanco-4.svg"
+                                width="320" height="51">
                         </a>
                         <p class="mt-3 mb-4 text-start">No solo construimos grandes obras, sino sueños y comunidades
                             vibrantes.
@@ -976,6 +993,7 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/php-email-form/validate.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
@@ -1012,13 +1030,13 @@
             // }
             function onResize() {
                 if (window.innerWidth > 991) {
-                    console.log('mayor a 991')
+                    //console.log('mayor a 991')
                     //var currentVideo = document.querySelector('.main-banner video')
                     //if (!currentVideo) {
                     //    mountVideo()
                     //}
                 } else {
-                    console.log('menor a 991')
+                    //console.log('menor a 991')
                     //removeCurrentVideo()
                 }
             }
