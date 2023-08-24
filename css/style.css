@@ -168,7 +168,7 @@ h6,
 .navbar-dark .navbar-brand .brand-logo-blanco {
     content: url("../img/logo-2023-blanco-4.svg");
     width: 350px;
-    display:block;
+    display: block;
 }
 
 .navbar-dark .navbar-toggler {
@@ -419,6 +419,9 @@ h6,
     opacity: 1;
 }
 
+.service-icon {
+    margin-top: 30px;
+}
 
 /*** Testimonial ***/
 .testimonial-carousel .owl-dots {
@@ -590,45 +593,45 @@ video {
 
 /*** Email Form ***/
 
- .php-email-form .validate {
+.php-email-form .validate {
     display: none;
     color: red;
     background-color: #d8f1f1;
     margin: 0 0 15px 0;
     font-weight: 400;
     font-size: 13px;
-  }
- 
-  .php-email-form .error-message {
+}
+
+.php-email-form .error-message {
     display: none;
     color: #fff;
     background: #ed3c0d;
     text-align: left;
     padding: 15px;
     font-weight: 600;
-  }
-  
-  .php-email-form .error-message br+br {
+}
+
+.php-email-form .error-message br+br {
     margin-top: 25px;
-  }
-  
-  .php-email-form .sent-message {
+}
+
+.php-email-form .sent-message {
     display: none;
     color: #fff;
     background: #18d26e;
     text-align: center;
     padding: 15px;
     font-weight: 600;
-  }
-  
-  .php-email-form .loading {
+}
+
+.php-email-form .loading {
     display: none;
     background: #fff;
     text-align: center;
     padding: 15px;
-  }
-  
-  .php-email-form .loading:before {
+}
+
+.php-email-form .loading:before {
     content: "";
     display: inline-block;
     border-radius: 50%;
@@ -639,27 +642,27 @@ video {
     border-top-color: #eee;
     -webkit-animation: animate-loading 1s linear infinite;
     animation: animate-loading 1s linear infinite;
-  }
+}
 
-  @-webkit-keyframes animate-loading {
+@-webkit-keyframes animate-loading {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-  
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
-  @keyframes animate-loading {
+}
+
+@keyframes animate-loading {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-  
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }  
+}
 
 @media (min-width: 1200px) {
     .counters h1 {
