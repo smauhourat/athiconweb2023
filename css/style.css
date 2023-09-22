@@ -182,6 +182,11 @@ h6,
         background: #FFFFFF;
     }
 
+    .btn-outline-light {
+        color: #091E3E;
+        border-color: #091E3E;
+    }
+
     .navbar-dark .navbar-nav .nav-link,
     .navbar-dark .navbar-nav .nav-link.show,
     .sticky-top.navbar-dark .navbar-nav .nav-link {
