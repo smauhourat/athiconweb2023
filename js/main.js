@@ -20,8 +20,12 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > 45) {
             $('.navbar').addClass('sticky-top shadow-sm');
+            $('#btn-lang').removeClass('btn-outline-light');
+            $('#btn-lang').addClass('btn-outline-dark');
         } else {
             $('.navbar').removeClass('sticky-top shadow-sm');
+            $('#btn-lang').removeClass('btn-outline-dark');
+            $('#btn-lang').addClass('btn-outline-light');
         }
     });
 
