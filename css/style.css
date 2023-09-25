@@ -17,6 +17,86 @@
     animation: sk-rotateplane 1.2s infinite ease-in-out;
 }
 
+.btn-outline-light-icon {
+    color: #EEF9FF;
+    border-color: #EEF9FF
+}
+
+.btn-outline-light-icon:hover {
+    color: #000;
+    background-color: #EEF9FF;
+    border-color: #EEF9FF
+}
+
+.btn-check:focus+.btn-outline-light-icon,
+.btn-outline-light-icon:focus {
+    box-shadow: 0 0 0 .25rem rgba(238, 249, 255, 0.5)
+}
+
+.btn-check:checked+.btn-outline-light-icon,
+.btn-check:active+.btn-outline-light-icon,
+.btn-outline-light-icon:active,
+.btn-outline-light-icon.active,
+.btn-outline-light-icon.dropdown-toggle.show {
+    color: #000;
+    background-color: #EEF9FF;
+    border-color: #EEF9FF
+}
+
+.btn-check:checked+.btn-outline-light-icon:focus,
+.btn-check:active+.btn-outline-light-icon:focus,
+.btn-outline-light-icon:active:focus,
+.btn-outline-light-icon.active:focus,
+.btn-outline-light-icon.dropdown-toggle.show:focus {
+    box-shadow: 0 0 0 .25rem rgba(238, 249, 255, 0.5)
+}
+
+.btn-outline-light-icon:disabled,
+.btn-outline-light-icon.disabled {
+    color: #EEF9FF;
+    background-color: transparent
+}
+
+.btn-outline-dark-icon {
+    color: #091E3E;
+    border-color: #091E3E
+}
+
+.btn-outline-dark-icon:hover {
+    color: #fff;
+    background-color: #091E3E;
+    border-color: #091E3E
+}
+
+.btn-check:focus+.btn-outline-dark-icon,
+.btn-outline-dark-icon:focus {
+    box-shadow: 0 0 0 .25rem rgba(9, 30, 62, 0.5)
+}
+
+.btn-check:checked+.btn-outline-dark-icon,
+.btn-check:active+.btn-outline-dark-icon,
+.btn-outline-dark-icon:active,
+.btn-outline-dark-icon.active,
+.btn-outline-dark-icon.dropdown-toggle.show {
+    color: #fff;
+    background-color: #091E3E;
+    border-color: #091E3E
+}
+
+.btn-check:checked+.btn-outline-dark-icon:focus,
+.btn-check:active+.btn-outline-dark-icon:focus,
+.btn-outline-dark-icon:active:focus,
+.btn-outline-dark-icon.active:focus,
+.btn-outline-dark-icon.dropdown-toggle.show:focus {
+    box-shadow: 0 0 0 .25rem rgba(9, 30, 62, 0.5)
+}
+
+.btn-outline-dark-icon:disabled,
+.btn-outline-dark-icon.disabled {
+    color: #091E3E;
+    background-color: transparent
+}
+
 @-webkit-keyframes sk-rotateplane {
     0% {
         -webkit-transform: perspective(120px)
@@ -183,7 +263,7 @@ h6,
     }
 
     /*san*/
-    .btn-outline-light {
+    .btn-outline-light-icon {
         color: #091E3E;
         border-color: #091E3E;
     }

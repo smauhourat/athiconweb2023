@@ -20,12 +20,14 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > 45) {
             $('.navbar').addClass('sticky-top shadow-sm');
-            $('#btn-lang').removeClass('btn-outline-light');
-            $('#btn-lang').addClass('btn-outline-dark');
+            $('#btn-lang').removeClass('btn-outline-light-icon');
+            $('#btn-lang').addClass('btn-outline-dark-icon');
+            console.log('scroll > 45');
         } else {
             $('.navbar').removeClass('sticky-top shadow-sm');
-            $('#btn-lang').removeClass('btn-outline-dark');
-            $('#btn-lang').addClass('btn-outline-light');
+            $('#btn-lang').removeClass('btn-outline-dark-icon');
+            $('#btn-lang').addClass('btn-outline-light-icon');
+            console.log('scroll < 45');
         }
     });
 
