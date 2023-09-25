@@ -17,6 +17,10 @@
     animation: sk-rotateplane 1.2s infinite ease-in-out;
 }
 
+#header-carousel video {
+    object-fit: cover;
+}
+
 .btn-outline-light-icon {
     color: #EEF9FF;
     border-color: #EEF9FF
