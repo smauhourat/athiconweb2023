@@ -783,3 +783,11 @@ video {
     background: rgb(238, 249, 255);
     background: linear-gradient(90deg, rgba(238, 249, 255, 1) 0%, rgba(219, 237, 246, 1) 39%, rgba(219, 237, 246, 1) 63%, rgba(238, 249, 255, 1) 100%);
 }
+
+.office-footer {
+    font-weight: 600;
+}
+
+.phone-footer {
+    font-size: 0.85rem;
+}
