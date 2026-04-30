@@ -96,7 +96,14 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
                     <a href="index.html" class="nav-item nav-link">Inicio</a>
-                    <a href="#about" class="nav-item nav-link active">Empresa</a>
+                    <!-- <a href="#about" class="nav-item nav-link active">Empresa</a> -->
+                    <div class="nav-item dropdown">
+                        <a href="#about" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Empresa</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="#about" class="dropdown-item">Nosotros</a>
+                            <a href="about.html" class="dropdown-item">Mision y Valores</a>
+                        </div>
+                    </div>                    
                     <a href="#service" class="nav-item nav-link">Servicios</a>
                     <a href="#contact" class="nav-item nav-link">Contacto</a>
                     <a href="en/index.html" class="nav-item nav-link" title="ingles">
@@ -159,9 +166,63 @@
     </section>
     <!-- About End -->
 
+        <div class="container-fluid py-0 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-1">
+            <div class="row g-4"> <!-- separación entre columnas -->
+
+                <div class="col-lg-4">
+                    <div class="bg-light rounded p-4 h-100 shadow-sm">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-gem text-white" style="font-size:26px"></i>
+                        </div>
+                        <h4>Values</h4>
+                            <p class="mb-0">Nuestro conductor clave dentro de la Empresa, es disponer de un conjunto
+                                claro de valores y cultura que se comparte y es
+                                propiedad de todos dentro de la Empresa. Esto nos permite asegurar una mayor coherencia
+                                del producto entregable a
+                                nuestros clientes, bajo el lema: "Contribuir con el medio ambiente y fomentar el
+                                espíritu de equipo".
+                            </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="bg-light rounded p-4 h-100 shadow-sm">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-eye text-white" style="font-size:26px"></i>
+                        </div>
+                        <h4>Vision</h4>
+                            <p class="mb-0">Apuntamos a ser una empresa líder, reconocida por su alto grado de
+                                profesionalismo, su comportamiento ético, su política
+                                de continuo mejoramiento de la Calidad.
+                            </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="bg-light rounded p-4 h-100 shadow-sm">
+                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-bullseye text-white" style="font-size:26px"></i>
+                        </div>
+                        <h4>Mision</h4>
+                            <p class="mb-0">Contribuir al negocio de nuestros clientes mediante nuestros servicios de
+                                proyectos, soporte ingenieril y desarrollo de
+                                obras, con el fin de ser considerados una valiosa extensión de su estructura de
+                                negocios. Satisfacemos las necesidades y
+                                requerimientos de nuestros clientes, construyendo bajo estrictas normas de calidad.</p>                    
+                        </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
     <!-- Features Start -->
-    <div class="container-fluid py-0 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- <div class="container-fluid py-0 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-4">
@@ -215,7 +276,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Features Start -->
 
 
