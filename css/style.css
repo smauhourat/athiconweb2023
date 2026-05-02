@@ -643,7 +643,12 @@ h6,
 }
 
 .bg-header-safety {
-    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/safety-header.jpg) center center no-repeat;
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/safety-header.webp) center center no-repeat;
+    background-size: cover;
+}
+
+.bg-header-quality {
+    background: linear-gradient(rgba(9, 30, 62, .7), rgba(9, 30, 62, .7)), url(../img/quality-header2.jpg) center center no-repeat;
     background-size: cover;
 }
 
