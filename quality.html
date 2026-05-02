@@ -142,11 +142,89 @@
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-lg-5 mobile-hide" style="min-height: 500px;">
+                        <div class="position-relative h-100" style="overflow: visible;">
+
+                            <!-- Marco decorativo navy detrás -->
+                            <div style="
+                            position: absolute;
+                            top: 10px; left: 10px;
+                            right: -10px; bottom: -10px;
+                            background: #1a3a5c;
+                            z-index: 0;
+                            "></div>
+
+                            <!-- Imagen con clip-path asimétrico -->
+                            <div style="
+                            position: absolute;
+                            inset: 0;
+                            z-index: 1;
+                            overflow: hidden;
+                            clip-path: polygon(0 0, 100% 0, 100% 88%, 85% 100%, 0 100%);
+                            ">
+                            <img class="wow zoomIn h-100 w-100" data-wow-delay="0.9s"
+                                src="img/quality.jpg"
+                                style="object-fit: cover; display: block;" />
+
+                            <!-- Overlay degradado sutil en la base -->
+                            <div style="
+                                position: absolute;
+                                bottom: 0; left: 0; right: 0;
+                                height: 45%;
+                                background: linear-gradient(to top, rgba(26,58,92,0.65), transparent);
+                            "></div>
+                            </div>
+
+                            <!-- Etiqueta inferior izquierda -->
+                            <div style="
+                            position: absolute;
+                            bottom: 28px; left: 20px;
+                            z-index: 2;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            ">
+                            <div style="width: 28px; height: 2px; background: #2980b9;"></div>
+                            <span style="
+                                font-size: 13px;
+                                letter-spacing: 3px;
+                                text-transform: uppercase;
+                                color: rgba(255,255,255,0.9);
+                                font-family: inherit;
+                                font-weight: 600;
+                            ">Mejora continua</span>
+                            </div>
+
+                            <!-- Badge escudo esquina superior derecha -->
+                            <div style="
+                            position: absolute;
+                            top: -14px; right: 14px;
+                            width: 54px; height: 54px;
+                            background: #2980b9;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            z-index: 3;
+                            box-shadow: 0 4px 16px rgba(41,128,185,0.45);
+                            ">
+
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
+     stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Cinta izquierda -->
+  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+  <!-- Círculo de la medalla -->
+  <circle cx="12" cy="8" r="7"></circle>
+</svg>                            
+                            </div>
+
+                        </div>
+                    </div>                      
+                    <!-- <div class="col-lg-5 mobile-hide" style="min-height: 500px;">
                         <div class="position-relative h-100">
                             <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
                                 src="img/quality.jpg" style="object-fit: cover;" srcset="">
                         </div>
-                    </div>                    
+                    </div>     -->
+
                     <div class="col-lg-7">
                         <div class="section-title position-relative pb-3 mb-5">
                             <h5 class="fw-bold text-primary text-uppercase">Calidad</h5>
