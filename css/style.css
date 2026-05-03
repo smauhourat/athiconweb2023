@@ -836,3 +836,16 @@ video {
 .text-banner-hero h5 {
     color: #ffffff !important;
 }
+
+@media (max-width: 991px) {
+    .main-banner__video { display: none; }
+    #slide-1 { background: url('../assets/video/video1.jpg') center/cover no-repeat; min-height: 500px; }
+    #slide-2 { background: url('../assets/video/video2.jpg') center/cover no-repeat; min-height: 500px; }
+    #slide-3 { background: url('../assets/video/video1.jpg') center/cover no-repeat; min-height: 500px; }
+    #slide-4 { background: url('../assets/video/video2.jpg') center/cover no-repeat; min-height: 500px; }
+}
+
+.dropdown-item {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+}

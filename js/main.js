@@ -22,12 +22,10 @@
             $('.navbar').addClass('sticky-top shadow-sm');
             $('#btn-lang').removeClass('btn-outline-light-icon');
             $('#btn-lang').addClass('btn-outline-dark-icon');
-            console.log('scroll > 45');
         } else {
             $('.navbar').removeClass('sticky-top shadow-sm');
             $('#btn-lang').removeClass('btn-outline-dark-icon');
             $('#btn-lang').addClass('btn-outline-light-icon');
-            console.log('scroll < 45');
         }
     });
 
@@ -166,7 +164,6 @@
         loop: true,
         margin: 45,
         dots: false,
-        loop: true,
         autoplay: true,
         smartSpeed: 1000,
         responsive: {
@@ -184,6 +181,26 @@
             }
         }
     });
+
+    // Lazy-load non-active carousel videos on slide transition
+    var headerCarousel = document.getElementById('header-carousel');
+    if (headerCarousel) {
+        headerCarousel.addEventListener('slide.bs.carousel', function (e) {
+            var video = e.relatedTarget.querySelector('video[data-src-mp4]');
+            if (video && !video.querySelector('source')) {
+                var webm = document.createElement('source');
+                webm.src = video.dataset.srcWebm;
+                webm.type = 'video/webm';
+                var mp4 = document.createElement('source');
+                mp4.src = video.dataset.srcMp4;
+                mp4.type = 'video/mp4';
+                video.appendChild(webm);
+                video.appendChild(mp4);
+                video.load();
+                video.play();
+            }
+        });
+    }
 
 })(jQuery);
 

@@ -27,24 +27,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet"
-        type="text/css" preload>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"></noscript>
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"
-        type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"
-        type="text/css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"></noscript>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"></noscript>
 
     <!-- Libraries Stylesheet -->
-    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" type="text/css">
-    <link href="../lib/animate/animate.min.css" rel="stylesheet" type="text/css">
+    <link rel="preload" href="../lib/owlcarousel/assets/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../lib/owlcarousel/assets/owl.carousel.min.css"></noscript>
+    <link rel="preload" href="../lib/animate/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../lib/animate/animate.min.css"></noscript>
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../css/bootstrap.min.css?v=2.1" rel="stylesheet" type="text/css">
 
     <!-- Template Stylesheet -->
-    <link href="../css/style.css?v=2.1" rel="stylesheet" type="text/css">
+    <link href="../css/style.css?v=2.2" rel="stylesheet" type="text/css">
+
+    <!-- Preload LCP image (hero video poster) -->
+    <link rel="preload" href="../assets/video/video1.jpg" as="image" fetchpriority="high">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W4N8WG1X6M"></script>
@@ -135,10 +142,11 @@
 
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <video autoplay loop muted plays-inline id="video1" class="main-banner__video"
-                        poster="../assets/video/video1.jpg">
-                        <source src="../assets/video/video1.mp4" class="w-100">
+                <div class="carousel-item active" id="slide-1">
+                    <video autoplay loop muted playsinline id="video1" class="main-banner__video"
+                        poster="../assets/video/video1.jpg" fetchpriority="high">
+                        <source src="../assets/video/video1-opt.webm" type="video/webm">
+                        <source src="../assets/video/video1-opt.mp4" type="video/mp4">
                     </video>
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
@@ -151,10 +159,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <video autoplay loop muted plays-inline id="video2" class="main-banner__video"
-                        poster="../assets/video/video2.jpg">
-                        <source src="../assets/video/video2.mp4" class="w-100">
+                <div class="carousel-item" id="slide-2">
+                    <video loop muted playsinline id="video2" class="main-banner__video"
+                        poster="../assets/video/video2.jpg"
+                        data-src-webm="../assets/video/video2-opt.webm"
+                        data-src-mp4="../assets/video/video2-opt.mp4">
                     </video>
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
@@ -167,10 +176,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <video autoplay loop muted plays-inline id="video3" class="main-banner__video"
-                        poster="../assets/video/video1.jpg">
-                        <source src="../assets/video/video1.mp4" class="w-100">
+                <div class="carousel-item" id="slide-3">
+                    <video loop muted playsinline id="video3" class="main-banner__video"
+                        poster="../assets/video/video1.jpg"
+                        data-src-webm="../assets/video/video1-opt.webm"
+                        data-src-mp4="../assets/video/video1-opt.mp4">
                     </video>
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
@@ -182,10 +192,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <video autoplay loop muted plays-inline id="video4" class="main-banner__video"
-                        poster="../assets/video/video2.jpg">
-                        <source src="../assets/video/video2.mp4" class="w-100">
+                <div class="carousel-item" id="slide-4">
+                    <video loop muted playsinline id="video4" class="main-banner__video"
+                        poster="../assets/video/video2.jpg"
+                        data-src-webm="../assets/video/video2-opt.webm"
+                        data-src-mp4="../assets/video/video2-opt.mp4">
                     </video>
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
@@ -304,7 +315,10 @@ From our headquarters in Los Angeles, USA, to our Latin American subsidiaries in
                     <div class="col-lg-5 mobile-hide" style="min-height: 500px;">
                         <div class="position-relative h-100">
                             <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
-                                src="../img/about4-516x516.webp" style="object-fit: cover;" srcset="">
+                                src="../img/about4-516x516.webp"
+                                srcset="../img/about4-516x516.webp 516w, ../img/about4-724x724.webp 724w, ../img/about4-1032x1032.webp 1032w"
+                                sizes="(max-width: 991px) 0px, (max-width: 1399px) 40vw, 516px"
+                                width="516" height="516" style="object-fit: cover;" loading="lazy" alt="about">
                         </div>
                     </div>
                 </div>
@@ -347,7 +361,10 @@ From our headquarters in Los Angeles, USA, to our Latin American subsidiaries in
                 <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
                     <div class="position-relative h-100">
                         <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s"
-                            src="../img/feature3-516x516.webp" style="object-fit: cover;" alt="feature2">
+                            src="../img/feature3-516x516.webp"
+                            srcset="../img/feature3-516x516.webp 516w, ../img/feature3-724x724.webp 724w, ../img/feature3-1032x1032.webp 1032w"
+                            sizes="(max-width: 991px) 0px, (max-width: 1199px) 33vw, 400px"
+                            width="516" height="516" style="object-fit: cover;" loading="lazy" alt="features">
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -578,15 +595,15 @@ From our headquarters in Los Angeles, USA, to our Latin American subsidiaries in
         <div class="container py-5 mb-5">
             <div class="bg-white">
                 <div class="owl-carousel vendor-carousel">
-                    <img src="../img/vendor-1.webp" alt="vendor-1">
-                    <img src="../img/vendor-2.webp" alt="vendor-2">
-                    <img src="../img/vendor-3.webp" alt="vendor-3">
-                    <img src="../img/vendor-4.webp" alt="vendor-4">
-                    <img src="../img/vendor-5.webp" alt="vendor-5">
-                    <img src="../img/vendor-6.webp" alt="vendor-6">
-                    <img src="../img/vendor-7.webp" alt="vendor-7">
-                    <img src="../img/vendor-8.webp" alt="vendor-8">
-                    <img src="../img/vendor-9.webp" alt="vendor-9">
+                    <img src="../img/vendor-1.webp" alt="vendor-1" loading="lazy" width="150" height="80">
+                    <img src="../img/vendor-2.webp" alt="vendor-2" loading="lazy" width="150" height="80">
+                    <img src="../img/vendor-3.webp" alt="vendor-3" loading="lazy" width="150" height="80">
+                    <img src="../img/vendor-4.webp" alt="vendor-4" loading="lazy" width="150" height="80">
+                    <img src="../img/vendor-5.webp" alt="vendor-5" loading="lazy" width="150" height="80">
+                    <img src="../img/vendor-6.webp" alt="vendor-6" loading="lazy" width="150" height="80">
+                    <img src="../img/vendor-7.webp" alt="vendor-7" loading="lazy" width="150" height="80">
+                    <img src="../img/vendor-8.webp" alt="vendor-8" loading="lazy" width="150" height="80">
+                    <img src="../img/vendor-9.webp" alt="vendor-9" loading="lazy" width="150" height="80">
                 </div>
             </div>
         </div>
@@ -603,7 +620,7 @@ From our headquarters in Los Angeles, USA, to our Latin American subsidiaries in
                         class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
                         <a href="index.html" class="navbar-brand">
                             <img class="brand-logo-blanco-footer" alt="logo-footer" src="../img/logo-2023-blanco-4.svg"
-                                width="320" height="51">
+                                width="320" height="51" loading="lazy">
                         </a>
                         <p class="mt-3 mb-4 text-start">Our objective is to build, not only constructions, but also
                             dreams for our community
@@ -647,21 +664,21 @@ From our headquarters in Los Angeles, USA, to our Latin American subsidiaries in
                                 <h3 class="text-light mb-0">Offices</h3>
                             </div>
                             <div class="d-flex mb-2 align-items-start">
-                                <img src="../img/eeuu-flag.svg" class="mt-0" />
+                                <img src="../img/eeuu-flag.svg" class="mt-0" width="24" height="16" loading="lazy" alt="EEUU" />
                                 <div class="d-flex flex-column">
                                     <p class="mb-0 ms-2 office-footer">EEUU</p> 
                                     <!-- <p class="mb-0 ms-2 phone-footer">+53 3232 2354</p>  -->
                                 </div>
                             </div>
                             <div class="d-flex mb-2 align-items-start">
-                                <img src="../img/chile-flag.svg" />
+                                <img src="../img/chile-flag.svg" width="24" height="16" loading="lazy" alt="Chile" />
                                 <div class="d-flex flex-column">
                                     <p class="mb-0 ms-2 office-footer">Chile</p> 
                                     <!-- <p class="mb-0 ms-2 phone-footer">+87 4343 2354</p>  -->
                                 </div>
                             </div>
                             <div class="d-flex mb-2 align-items-start">
-                                <img src="../img/argentina-flag.svg" />
+                                <img src="../img/argentina-flag.svg" width="24" height="16" loading="lazy" alt="Argentina" />
                                 <div class="d-flex flex-column">
                                     <p class="mb-0 ms-2 office-footer">Argentina</p> 
                                     <p class="mb-0 ms-2 phone-footer">+54 11 5263 0626</p> 
@@ -711,59 +728,19 @@ From our headquarters in Los Angeles, USA, to our Latin American subsidiaries in
 
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../lib/php-email-form/validate.js"></script>
-    <script src="../lib/wow/wow.min.js"></script>
-    <script src="../lib/easing/easing.min.js"></script>
-    <script src="../lib/waypoints/waypoints.min.js"></script>
-    <script src="../lib/counterup/counterup.min.js"></script>
-    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="../lib/php-email-form/validate.js"></script>
+    <script defer src="../lib/wow/wow.min.js"></script>
+    <script defer src="../lib/easing/easing.min.js"></script>
+    <script defer src="../lib/waypoints/waypoints.min.js"></script>
+    <script defer src="../lib/counterup/counterup.min.js"></script>
+    <script defer src="../lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="../js/main.js?v=2.2"></script>
+    <script defer src="../js/main.js?v=2.3"></script>
 
 
-    <script>
-        (function videoModule() {
-            // function removeCurrentVideo() {
-            //     var currentVideo = document.querySelector('.main-banner video')
-            //     if (currentVideo) {
-            //         document.querySelector('.main-banner').removeChild(currentVideo)
-            //         console.info('video removed')
-            //     }
-            // }
-            // function mountVideo() {
-            //     var video = document.createElement('video')
-            //     video.autoplay = true
-            //     video.muted = true
-            //     video.loop = true
-            //     video.id = 'video'
-            //     video.className = 'main-banner__video'
-            //     video.poster = '/h/img/poster.jpg'
-            //     var source = document.createElement('source')
-            //     source.src = '/assets/really-cool-video.mp4'
-            //     source.type = 'video/mp4'
-            //     video.appendChild(source)
-            //     document.querySelector('.main-banner').appendChild(video)
-            //     console.info('video mounted')
-            // }
-            function onResize() {
-                if (window.innerWidth > 991) {
-                    //console.log('mayor a 991')
-                    //var currentVideo = document.querySelector('.main-banner video')
-                    //if (!currentVideo) {
-                    //    mountVideo()
-                    //}
-                } else {
-                    //console.log('menor a 991')
-                    //removeCurrentVideo()
-                }
-            }
-            onResize()
-            window.addEventListener('resize', onResize)
-        })();
-    </script>
     <a href="https://api.whatsapp.com/send?phone=5491150951408&text=Hola%20Athicon,%20tengo%20una%20consulta%21%20Podes%20ayudarme?"
         class="float" target="_blank">
         <i class="fab fa-whatsapp my-float"></i>
