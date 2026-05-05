@@ -53,6 +53,10 @@
     <!-- Preload LCP image (hero video poster) -->
     <link rel="preload" href="../assets/video/video1.jpg" as="image" fetchpriority="high">
 
+  <link rel="alternate" hreflang="es" href="https://www.athicon.com/index.html">                                                                                                                
+  <link rel="alternate" hreflang="en" href="https://www.athicon.com/en/index.html">                                                                                                               
+  <link rel="alternate" hreflang="x-default" href="https://www.athicon.com/">     
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W4N8WG1X6M"></script>
     <script>
@@ -62,6 +66,26 @@
 
         gtag('config', 'G-W4N8WG1X6M');
     </script>
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Athicon",
+    "url": "https://www.athicon.com",
+    "logo": "https://www.athicon.com/img/logo-2023-blanco-5.svg",
+    "description": "Our objective is to build, not only constructions, but also dreams for our community.",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Morón",
+        "addressRegion": "Buenos Aires",
+        "addressCountry": "AR"
+    },
+    "sameAs": [
+        "https://www.facebook.com/profile.php?id=100077368554533",
+        "https://www.linkedin.com/company/athicon-arg"
+    ]
+    }
+    </script>      
 </head>
 
 <body>
@@ -107,7 +131,7 @@
                 <img class="brand-logo-blanco" src="../img/logo-2023-blanco-5.svg" alt="logo" width="350" height="56">
             </a>
             <button class="navbar-toggler" type="button" id="menu-mobile" data-bs-toggle="collapse"
-                aria-label="menu-mobile" data-bs-target="#navbarCollapse" name="mobile-menu"
+                aria-label="menu-mobile" aria-expanded="false" data-bs-target="#navbarCollapse" name="mobile-menu"
                 data-message="Menu desplegable">
                 <span class="fa fa-bars"></span>
             </button>
@@ -528,18 +552,21 @@
                                 <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                                     <div class="row g-3">
                                         <div class="form-group col-xl-12">
+                                            <label for="empresa" class="visually-hidden">Company</label>
                                             <input type="text" class="form-control bg-light border-0" placeholder="Company"
                                                 name="empresa" id="empresa" data-rule="minlen:4"
                                                 data-msg="Please enter your Company" style="height: 55px;" />
                                             <div class="validate"></div>
                                         </div>
                                         <div class="form-group col-12">
+                                            <label for="email" class="visually-hidden">Email</label>
                                             <input type="email" class="form-control bg-light border-0" placeholder="Email"
                                                 name="email" id="email" data-rule="email"
                                                 data-msg="Please enter a valid email address" style="height: 55px;" />
                                             <div class="validate"></div>
                                         </div>
                                         <div class="form-group col-12">
+                                            <label for="telefono" class="visually-hidden">Phone Number</label>
                                             <input type="text" class="form-control bg-light border-0"
                                                 placeholder="Phone Number" name="telefono" id="telefono"
                                                 data-rule="minlen:4" data-msg="Please enter a phone number"
@@ -547,12 +574,14 @@
                                             <div class="validate"></div>
                                         </div>
                                         <div class="form-group col-12">
+                                            <label for="motivo" class="visually-hidden">Request</label>
                                             <input type="text" class="form-control bg-light border-0" placeholder="Request"
                                                 name="motivo" id="motivo" data-rule="minlen:4"
                                                 data-msg="Please enter your request" style="height: 55px;" />
                                             <div class="validate"></div>
                                         </div>
                                         <div class="form-group col-12">
+                                            <label for="mensaje" class="visually-hidden">Message</label>
                                             <textarea class="form-control bg-light border-0" rows="3" name="mensaje"
                                                 id="mensaje" data-rule="required" data-msg="Please enter the message"
                                                 placeholder="Message"></textarea>
@@ -595,15 +624,15 @@
             <div class="container py-5 mb-5">
                 <div class="bg-white">
                     <div class="owl-carousel vendor-carousel">
-                        <img src="../img/vendor-1.webp" alt="vendor-1" loading="lazy" width="122">
-                        <img src="../img/vendor-2.webp" alt="vendor-2" loading="lazy" width="122">
-                        <img src="../img/vendor-3.webp" alt="vendor-3" loading="lazy" width="122">
-                        <img src="../img/vendor-4.webp" alt="vendor-4" loading="lazy" width="122">
-                        <img src="../img/vendor-5.webp" alt="vendor-5" loading="lazy" width="122">
-                        <img src="../img/vendor-6.webp" alt="vendor-6" loading="lazy" width="122">
-                        <img src="../img/vendor-7.webp" alt="vendor-7" loading="lazy" width="122">
-                        <img src="../img/vendor-8.webp" alt="vendor-8" loading="lazy" width="122">
-                        <img src="../img/vendor-9.webp" alt="vendor-9" loading="lazy" width="122">
+                        <img src="../img/vendor-1.webp" alt="vendor-1" loading="lazy" width="122" height="63">
+                        <img src="../img/vendor-2.webp" alt="vendor-2" loading="lazy" width="122" height="63">
+                        <img src="../img/vendor-3.webp" alt="vendor-3" loading="lazy" width="122" height="63">
+                        <img src="../img/vendor-4.webp" alt="vendor-4" loading="lazy" width="122" height="63">
+                        <img src="../img/vendor-5.webp" alt="vendor-5" loading="lazy" width="122" height="63">
+                        <img src="../img/vendor-6.webp" alt="vendor-6" loading="lazy" width="122" height="63">
+                        <img src="../img/vendor-7.webp" alt="vendor-7" loading="lazy" width="122" height="63">
+                        <img src="../img/vendor-8.webp" alt="vendor-8" loading="lazy" width="122" height="63">
+                        <img src="../img/vendor-9.webp" alt="vendor-9" loading="lazy" width="122" height="63">
                     </div>
                 </div>
             </div>
