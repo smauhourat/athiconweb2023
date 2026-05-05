@@ -48,7 +48,10 @@
     <link href="../css/bootstrap.min.css?v=2.1" rel="stylesheet" type="text/css">
 
     <!-- Template Stylesheet -->
-    <link href="../css/style.css?v=2.1" rel="stylesheet" type="text/css">
+    <link href="../css/style.css?v=2.2" rel="stylesheet" type="text/css">
+
+    <!-- Preload LCP image (hero video poster) -->
+    <link rel="preload" href="../assets/video/video1.jpg" as="image" fetchpriority="high">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W4N8WG1X6M"></script>
@@ -89,7 +92,7 @@
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href="https://www.linkedin.com/company/athicon-arg" target="_blank"
                         aria-label="linkedin"><i class="fab fa-linkedin-in fw-normal"></i></a>
                     <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2"
-                        href="https://www.instagram.com/athiconingenieria/" target="_blank"
+                        href="https://www.instagram.com/athiconconstrucciones/" target="_blank"
                         aria-label="instagram"><i class="fab fa-instagram fw-normal"></i></a>
                 </div>
             </div>
@@ -102,7 +105,7 @@
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
             <a href="index.html" class="navbar-brand p-0" aria-label="logo">
-                <img class="brand-logo-blanco" src="img/logo-2023-blanco-5.svg" alt="logo" width="350" height="56">
+                <img class="brand-logo-blanco" src="../img/logo-2023-blanco-5.svg" alt="logo" width="350" height="56">
             </a>
             <button class="navbar-toggler" type="button" id="menu-mobile" data-bs-toggle="collapse"
                 aria-label="menu-mobile" data-bs-target="#navbarCollapse" name="mobile-menu"
@@ -112,17 +115,16 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
                     <a href="index.html" class="nav-item nav-link">Home</a>
-                    <!-- <a href="#about" class="nav-item nav-link active">Company</a> -->
                     <div class="nav-item dropdown">
-                        <a href="#about" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Company</a>
+                        <a href="#about" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Company</a>
                         <div class="dropdown-menu m-0">
-                            <a href="#about" class="dropdown-item">About us</a>
+                            <a href="index.html#about" class="dropdown-item">About us</a>
                             <a href="about.html" class="dropdown-item">Mission and Values</a>
                         </div>
-                    </div>                     
+                    </div>                    
                     <a href="index.html#service" class="nav-item nav-link">Services</a>
                     <div class="nav-item dropdown">
-                        <a href="#about" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Foundations</a>
+                        <a href="" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Our Foundations</a>
                         <div class="dropdown-menu m-0">
                             <a href="safety.html" class="dropdown-item">Safety</a>
                             <a href="quality.html" class="dropdown-item">Quality</a>
@@ -138,119 +140,134 @@
             </div>
         </nav>
 
-        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+        <div class="container-fluid bg-primary py-5 bg-header-safety" style="margin-bottom: 50px; padding-top: 12rem!important; padding-bottom: 12rem!important;">
             <div class="row py-5">
-                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
-                    <h1 class="display-4 text-white animated zoomIn">COMPANY</h1>
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center text-banner-hero">
+                    <!-- <h5 class="text-primary text-uppercase">Seguridad</h5> -->
+                    <h1 class="display-1 text-white animated zoomIn">SAFETY IS NOT A DESTINATION, IT'S THE WAY FORWARD.</h1>
                 </div>
             </div>
         </div>
+
     </div>
     <!-- Navbar & Carousel End -->
 
-    <!-- About Start -->
-    <section id="about">
+    <!-- Safety Start -->
+    <section id="security">
         <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row g-5">
-                    <div class="col-lg-12">
+                    <div class="col-lg-7">
                         <div class="section-title position-relative pb-3 mb-5">
-                            <h5 class="fw-bold text-primary text-uppercase">About us</h5>
-                            <h1 class="mb-0">BULDING THE FUTURE</h1>
+                            <h5 class="fw-bold text-primary text-uppercase">Seguridad</h5>
+                            <h1 class="mb-0">SAFETY IS WORTH MORE THAN ANY PROMISE.</h1>
                         </div>
-                        <p class="mb-4">Through our constant drive for innovation, a firm commitment to quality, and active attention to our clients, we have focused on continuously improving our services. We have a team of professionals and technicians dedicated not only to design but also to civil and industrial assembly and construction—allowing us to adapt to any requirement or challenge that arises.
+                        <p class="mb-4">When you start a construction project, your mind is full of deadlines, costs, and decisions. Peace of mind —knowing that everyone, on-site and off-site, is protected— shouldn't be one more concern. Not when you're working with a partner who lives safety as a non-negotiable value, where every team member looks out for themselves and others as if they were family. Because for us, ensuring the safety of our professionals is the most important thing we do every day.
                         </p>
-                        <p class="mb-4">
-                            We back our business commitment by putting all necessary resources at our clients' disposal to meet agreed-upon quality, deadlines, and budget goals. Serving a wide range of industries gives us the flexibility to respond to diverse scenarios proposed by our clients. As a result, we can suggest alternative costs and more effective solutions—without ever breaking client confidentiality.
-                        </p>
-                        <p class="mb-4">
-                            We build long-term relationships at every level, ensuring a deeper understanding of our clients' business drivers and the "why" behind each project. A strong rapport in our working relationship guarantees greater alignment of joint business objectives.
-                        </p>
-                        <p class="mb-4">
-                            Our success in partnering with several leading companies reflects one of our core goals: to be chosen again.
-                        </p>
+                        <div class="row g-0 mb-3">
+                            <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                                <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>We are capable</h5>
+                                <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>We are responsible</h5>
+                                <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>We are committed</h5>
+                            </div>
+                            <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
+                            <div class="bg-primary d-flex align-items-center justify-content-center rounded"
+                                style="min-width: 60px; height: 60px;">
+                                <i class="fa fa-shield-alt text-white" style="font-size:26px"></i>
+                            </div>
+                            <div class="ps-4">
+                                <h4 class="text-primary mb-0">SAFETY IS EVERYONE'S TASK, AND EVERYONE MATTERS</h4>
+                            </div>
+                        </div>
                     </div>
+                    <div class="col-lg-5 mobile-hide" style="min-height: 500px;">
+                        <div class="position-relative h-100" style="overflow: visible;">
+
+                            <!-- Marco decorativo navy detrás -->
+                            <div style="
+                            position: absolute;
+                            top: 10px; left: 10px;
+                            right: -10px; bottom: -10px;
+                            background: #1a3a5c;
+                            z-index: 0;
+                            "></div>
+
+                            <!-- Imagen con clip-path asimétrico -->
+                            <div style="
+                            position: absolute;
+                            inset: 0;
+                            z-index: 1;
+                            overflow: hidden;
+                            clip-path: polygon(0 0, 100% 0, 100% 88%, 85% 100%, 0 100%);
+                            ">
+                            <img class="wow zoomIn h-100 w-100" data-wow-delay="0.9s"
+                                src="../img/safety-3-516.webp"
+                                style="object-fit: cover; display: block;" loading="lazy" alt="safety" />
+
+                            <!-- Overlay degradado sutil en la base -->
+                            <div style="
+                                position: absolute;
+                                bottom: 0; left: 0; right: 0;
+                                height: 45%;
+                                background: linear-gradient(to top, rgba(26,58,92,0.65), transparent);
+                            "></div>
+                            </div>
+
+                            <!-- Etiqueta inferior izquierda -->
+                            <div style="
+                            position: absolute;
+                            bottom: 28px; left: 20px;
+                            z-index: 2;
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            ">
+                            <div style="width: 28px; height: 2px; background: #2980b9;"></div>
+                            <span style="
+                                font-size: 13px;
+                                letter-spacing: 3px;
+                                text-transform: uppercase;
+                                color: rgba(255,255,255,0.9);
+                                font-family: inherit;
+                                font-weight: 600;
+                            ">Safety Guaranteed</span>
+                            </div>
+
+                            <!-- Badge escudo esquina superior derecha -->
+                            <div style="
+                            position: absolute;
+                            top: -14px; right: 14px;
+                            width: 54px; height: 54px;
+                            background: #2980b9;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            z-index: 3;
+                            box-shadow: 0 4px 16px rgba(41,128,185,0.45);
+                            ">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                                stroke="#ffffff" stroke-width="2.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                            </div>
+
+                        </div>
+                    </div>                    
+                    <!-- <div class="col-lg-5 mobile-hide" style="min-height: 500px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s"
+                                src="img/safety-3-516.jpg" style="object-fit: cover;" srcset="">
+                        </div>
+                    </div> -->
+
                 </div>
             </div>
         </div>
     </section>
-    <!-- About End -->
-
-    <div class="container-fluid py-0 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-1">
-            <div class="row g-4"> <!-- separación entre columnas -->
-
-                <div class="col-lg-4">
-                    <div class="bg-light rounded p-4 h-100 shadow-sm">
-                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
-                            <i class="fa fa-gem text-white" style="font-size:26px"></i>
-                        </div>
-                        <h4>Values</h4>
-                        <p class="mb-0">Our key driver within the Company, is to have a clear set of values and culture that is shared and is property of everyone within the Company. This allows us to assure greater coherence of the deliverable product to our clients, under the motto: "To contribute with the environment and to foster the team spirit."
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="bg-light rounded p-4 h-100 shadow-sm">
-                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
-                            <i class="fa fa-eye text-white" style="font-size:26px"></i>
-                        </div>
-                        <h4>Vision</h4>
-                                <p class="mb-0">We aim to be a leader company, recognized by its high grade of professionalism, its ethical behavior, its policy of continuous improvement of the Quality.
-                                </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="bg-light rounded p-4 h-100 shadow-sm">
-                        <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
-                            <i class="fa fa-bullseye text-white" style="font-size:26px"></i>
-                        </div>
-                        <h4>Mission</h4>
-                                <p class="mb-0">To contribute to the business of our clients by means of our services of projects, engineering support and development of works, with the purpose of being considered a valuable extension of their business structure. We sa
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Service Start -->
-    <section id="service">
-        <div class="container-fluid py-1 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container py-5">
-                <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                    <h5 class="fw-bold text-primary text-uppercase">Clients</h5>
-                    <h1 class="mb-0">CUSTOMERS WHO TRUST US</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Service End -->
-
-    <!-- Vendor Start -->
-    <div class="container-fluid py-0 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5 mb-5">
-            <div class="bg-white">
-                <div class="owl-carousel vendor-carousel">
-                    <img src="/img/vendor-1.webp" alt="vendor-1" loading="lazy" width="122">
-                    <img src="/img/vendor-2.webp" alt="vendor-2" loading="lazy" width="122">
-                    <img src="/img/vendor-3.webp" alt="vendor-3" loading="lazy" width="122">
-                    <img src="/img/vendor-4.webp" alt="vendor-4" loading="lazy" width="122">
-                    <img src="/img/vendor-5.webp" alt="vendor-5" loading="lazy" width="122">
-                    <img src="/img/vendor-6.webp" alt="vendor-6" loading="lazy" width="122">
-                    <img src="/img/vendor-7.webp" alt="vendor-7" loading="lazy" width="122">
-                    <img src="/img/vendor-8.webp" alt="vendor-8" loading="lazy" width="122">
-                    <img src="/img/vendor-9.webp" alt="vendor-9" loading="lazy" width="122">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Vendor End -->
+    <!-- Safety End -->
 
 
     <!-- Footer Start -->
@@ -370,6 +387,7 @@
 
 
     <!-- JavaScript Libraries -->
+    <!-- JavaScript Libraries -->
     <script defer src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script defer src="../lib/php-email-form/validate.js"></script>
@@ -382,47 +400,6 @@
     <!-- Template Javascript -->
     <script defer src="../js/main.js?v=2.3"></script>
 
-
-    <script>
-        (function videoModule() {
-            // function removeCurrentVideo() {
-            //     var currentVideo = document.querySelector('.main-banner video')
-            //     if (currentVideo) {
-            //         document.querySelector('.main-banner').removeChild(currentVideo)
-            //         console.info('video removed')
-            //     }
-            // }
-            // function mountVideo() {
-            //     var video = document.createElement('video')
-            //     video.autoplay = true
-            //     video.muted = true
-            //     video.loop = true
-            //     video.id = 'video'
-            //     video.className = 'main-banner__video'
-            //     video.poster = '/h/img/poster.jpg'
-            //     var source = document.createElement('source')
-            //     source.src = '/assets/really-cool-video.mp4'
-            //     source.type = 'video/mp4'
-            //     video.appendChild(source)
-            //     document.querySelector('.main-banner').appendChild(video)
-            //     console.info('video mounted')
-            // }
-            function onResize() {
-                if (window.innerWidth > 991) {
-                    //console.log('mayor a 991')
-                    //var currentVideo = document.querySelector('.main-banner video')
-                    //if (!currentVideo) {
-                    //    mountVideo()
-                    //}
-                } else {
-                    //console.log('menor a 991')
-                    //removeCurrentVideo()
-                }
-            }
-            onResize()
-            window.addEventListener('resize', onResize)
-        })();
-    </script>
     <a href="https://api.whatsapp.com/send?phone=5491150951408&text=Hola%20Athicon,%20tengo%20una%20consulta%21%20Podes%20ayudarme?"
         class="float" target="_blank">
         <i class="fab fa-whatsapp my-float"></i>
