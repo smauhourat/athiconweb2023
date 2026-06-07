@@ -555,6 +555,11 @@ h6,
     box-shadow: 0 0 30px #DDDDDD;
 }
 
+.vendor-carousel .owl-item img {
+    height: auto;
+    object-fit: contain;
+}
+
 
 /*** Team ***/
 .team-item {
